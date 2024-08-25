@@ -1,0 +1,17 @@
+[
+    {
+        "image":"seafoods.jpg",
+        "name":"Fried Salmon Special",
+        "description":"Enjoy our delicious lemon zested salmon!"
+    },
+    {
+        "image":"desserts.jpg",
+        "name":"Choco Ice Cream Sandwich",
+        "description":"This is a treat you do not want to miss!"
+    },
+    {
+        "image":"buffet.jpg",
+        "name":"Mixed Buffet",
+        "description":"It's all you can eat around here!"
+    }
+]

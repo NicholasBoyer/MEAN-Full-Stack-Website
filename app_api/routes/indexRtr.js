@@ -10,8 +10,12 @@ const auth = jwt({
 
 
 const tripsCtlr = require('../controllers/tripsCtlr');
-
+const mealsCtlr = require('../controllers/mealCtlr')
 const authCtlr = require('../controllers/authentication');
+
+router
+    .route('/meals')
+    .get(mealsCtlr.mealsList);
 
 router
     .route('/trips')

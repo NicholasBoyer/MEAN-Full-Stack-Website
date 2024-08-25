@@ -1,87 +1,77 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title>Foods - Travlr Getaways Website Template</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta charset="UTF-8">
+    <title>Foods - Travlr Getaways Website Template</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-	<div id="background">
-		<div id="page">
-			{{>header }}
-			<div id="contents">
-				<div class="box">
-					<div>
-						<div class="body">
-							<h1>Meals</h1>
-							<ul id="foods">
-								<li>
-									<h2><a href="meals.html">SeaFood Special</a></h2>
-									<div class="infos">
-										<a href="meals.html"><img src="images/seafoods.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
-										<p>
-											<span>Fried Salmon Special</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
-										</p>
-									</div>
-								</li>
-								<li>
-									<h2><a href="meals.html">Sumptuous Desserts</a></h2>
-									<div class="infos">
-										<a href="meals.html"><img src="images/desserts.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
-										<p>
-											<span>Choco Ice Cream Sandwich</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
-										</p>
-									</div>
-								</li>
-								<li>
-									<h2><a href="meals.html">Buffet</a></h2>
-									<div class="infos">
-										<a href="meals.html"><img src="images/buffet.jpg" alt="Img" height="169" width="780"><span class="cover"></span></a>
-										<p>
-											<span>Mixed Buffet</span> I'm a product overview. Here you can write more information about your product. Buyers like to know ...
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="footer">
-			<div>
-				<ul class="navigation">
-					<li>
-						<a href="index.html">Home</a>
-					</li>
-					<li>
-						<a href="travel.html">Travel</a>
-					</li>
-					<li>
-						<a href="rooms.html">Rooms</a>
-					</li>
-					<li class="active">
-						<a href="meals.html">Meals</a>
-					</li>
-					<li>
-						<a href="news.html">News</a>
-					</li>
-					<li>
-						<a href="about.html">About</a>
-					</li>
-					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-				</ul>
-				<div id="connect">
-					<a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a> <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a> <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a> <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
-				</div>
-			</div>
-			<p>
-				© 2023 by Travlr Getaways. All Rights Reserved
-			</p>
-		</div>
-	</div>
+    <div id="background">
+        <div id="page">
+            {{>header }}
+            <div id="contents">
+                <div class="box">
+                    <div>
+                        <div class="body">
+                            <h1>Meals</h1>
+                            <ul id="foods">
+                                {{#each meals}}
+                                <li>
+                                    <h2><a href="#">{{name}}</a></h2>
+                                    <div class="infos">
+                                        <a href="#"><img src="images/{{image}}" alt="Img" height="169" width="780"><span class="cover"></span></a>
+                                        <p>
+                                            <span>{{name}}</span> {{description}}
+                                        </p>
+                                    </div>
+                                </li>
+                                {{else}}
+                                <li>
+                                    <p>No meals available at the moment. Please check back later.</p>
+                                </li>
+                                {{/each}}
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div>
+                <ul class="navigation">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="travel.html">Travel</a>
+                    </li>
+                    <li>
+                        <a href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="active">
+                        <a href="meals.html">Meals</a>
+                    </li>
+                    <li>
+                        <a href="news.html">News</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                <div id="connect">
+                    <a href="http://pinterest.com/fwtemplates/" target="_blank" class="pinterest"></a>
+                    <a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" class="facebook"></a>
+                    <a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" class="twitter"></a>
+                    <a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" class="googleplus"></a>
+                </div>
+            </div>
+            <p>
+                © 2023 by Travlr Getaways. All Rights Reserved
+            </p>
+        </div>
+    </div>
 </body>
 </html>
